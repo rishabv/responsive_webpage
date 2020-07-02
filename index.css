@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+ 
+.navbar{
+    display:flex;
+    align-items: center;
+    top:0;
+    position: sticky;
+    cursor: pointer;
+}
+.nav-list{
+    width: 70%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 18px 10px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: azure;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-list li a:hover{
+   
+    color:grey;
+}
+
+.logo{
+    width: 18%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width:30%;
+    border-radius: 50%;
+    border:2px solid white;
+}
+.rightNav{
+    width: 30%;
+    /* background-color: aquamarine; */
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search{
+    padding: 3px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius:10px ;
+}
+
+.background{
+    background:rgba(0, 0, 0, 0.7) url('Hero.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.box-main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: 'Montserrat', sans-serif;; 
+    margin: auto;  
+    max-width: 50%;
+    height: 80%;
+}
+.firstsection{
+    height: 100vh;
+
+}
+.firstHalf{
+    width: 70%;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.secondHalf{
+    
+    width: 50%;
+}
+.secondHalf img{
+    width: 70%;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: auto;
+}
+.text-big{
+    font-size: 30px;
+}
+.text-small{
+    font-size: 15px;
+}
+.btn{
+    padding:8px ;
+    margin: 8px 4px;
+    border-radius: 8px;
+    font-size:15px ;
+    border: 1px solid aqua;
+    background:none;
+    color:wheat;
+    cursor: pointer;
+}
+.btn-sm{
+    vertical-align: middle;
+    padding: 4px 8px;
+    font-size:15px ;
+
+}
+.thumbnail img{
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.section{
+    /* height: 500px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin: auto; */
+    max-width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    margin:80px 100px;
+}
+
+.left{
+    flex-direction: row-reverse;
+}
+
+.mainhead h1{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif ;   
+}
+.paras{
+    padding: 0px 50px 20px ;
+}
+.contact{
+    background-color: aliceblue;
+    height: 500px;
+}
+.text-center{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif ;   
+    padding: 30px;
+}
+.form{
+    margin: auto;
+    max-width: 50%;
+}
+.form-input{
+    margin:7px;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif ;   
+
+}
+.btn-dark{
+    color: black;
+    border: 2px solid black;
+    font-family: 'Montserrat', sans-serif ;   
+
+}
+.text-footer{
+    font-size: 15px;
+    /* background-color:black; */
+    font-family: 'Montserrat', sans-serif ;   
+    height: 30px;
+    text-align: center;
+    padding-top:10px;
+    color: azure;
+
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    display: none;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height:4px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width:1000px){
+    .nav-list{
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.4s ease-out;
+        height: 447px;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }   
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .box-main{
+        max-width: 100%;
+        flex-direction: column-reverse;
+    }
+    .section{
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }  
+} 
