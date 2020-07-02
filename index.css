@@ -245,5 +245,7 @@ html{
     .burger{
         padding: 10px 10px;
     }
-
+    .paras{
+        padding:0px 0px;
+    }
 } 
